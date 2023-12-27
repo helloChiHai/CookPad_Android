@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.QLMonAnFragment"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:text="QUẢN LÝ MÓN ĂN"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="ID món: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edt_idMonAn"
+            android:hint="MA01"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Tên món: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edt_tenMonAn"
+            android:hint="Cơm nhà mẹ nấu"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Hình ảnh: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_chonHinhAnhMonAn"
+            android:text="Chọn hình ảnh"
+            android:textSize="15dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Hình ảnh được chọn: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/img_hinhAnhMonAnDuocChon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Loại: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edt_loaiMonAn"
+            android:hint="Canh"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Hướng dẫn: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edt_huongDanNauMonAn"
+            android:hint="B1: ...."
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Nguyên liệu: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edt_nguyenLieuMonAn"
+            android:hint="Cơm, cá, rau,..."
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Thời gian nấu: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edt_thoiGianNauMonAn"
+            android:hint="1h30"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Dụng cụ: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edt_dungCuMonAn"
+            android:hint="Dao, chảo,.."
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+        <Button
+            android:text="Thêm"
+            android:id="@+id/btn_themMonAn"
+            android:layout_width="160dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="15dp"/>
+        <Button
+            android:text="Query"
+            android:id="@+id/btn_queryMonAn"
+            android:layout_width="160dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_dsMonAn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

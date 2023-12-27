@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="mauXam">#545454</color>
+    <color name="mauXam5e5e5e">#5e5e5e</color>
+    <color name="your_stroke_color">#000000</color>
+    <color name="your_background_color">#FFFFFF</color>
+    <color name="your_hint_color">#808080</color>
+</resources>

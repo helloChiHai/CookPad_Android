@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_home" android:title="Tr.Chủ" android:icon="@drawable/baseline_home_24" ></item>
+    <item android:id="@+id/menu_search" android:title="Tìm kiếm" android:icon="@drawable/baseline_search_white_24" ></item>
+    <item android:id="@+id/menu_add" android:title="Thêm món ăn" android:icon="@drawable/baseline_add_circle_outline_24" ></item>
+    <item android:id="@+id/menu_user" android:title="Hồ Sơ" android:icon="@drawable/baseline_supervised_user_circle_24" ></item>
+</menu>

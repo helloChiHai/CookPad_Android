@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ThemMonMoiFragment"
+    android:background="@color/mauXam5e5e5e"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_fragment_themMonAn"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/black"
+        android:titleTextColor="@color/white">
+
+        <ImageButton
+            android:id="@+id/imgBtn_quayLai"
+            android:src="@drawable/baseline_arrow_back_white_24"
+            android:background="@color/black"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+        <LinearLayout
+            android:layout_gravity="right"
+            android:layout_marginRight="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botron_button">
+            <Button
+                android:id="@+id/btn_luuMonAn"
+                android:text="Lưu"
+                android:textSize="20dp"
+                android:backgroundTint="#707070"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@color/mauXam5e5e5e"
+                android:paddingBottom="20dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal|bottom"
+                    >
+                    <LinearLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/botron_button_5"
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:src="@drawable/baseline_camera_alt_black_24"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"/>
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/btn_moThuVienChonHinhMonAn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/mauXam5e5e5e"
+                        android:text="Đăng hình đại diện món ăn"
+                        android:textSize="20dp"
+                        />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_hinhMonDuocChon"
+                    android:src="@mipmap/img_background_1_foreground"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@color/black"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                >
+                <EditText
+                    android:id="@+id/edt_tenMon"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="20dp"
+                    android:background="@drawable/botron_button"
+                    android:hint="Tên món: Món canh ngon nhất nhà mình"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/edt_loaiMonAn"
+                    android:layout_marginTop="25dp"
+                    android:padding="10dp"
+                    android:hint="Bạn có thể chia sẽ món đó là loại nào không?"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="20dp"
+                    android:background="@drawable/botron_button"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@color/black"
+                android:layout_marginTop="5dp"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp">
+                <TextView
+                    android:text="Thời gian nấu"
+                    android:textSize="20dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/edt_thoiGianNau"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="20dp"
+                    android:background="@drawable/botron_button"
+                    android:hint="1 tiếng 30 phút"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/black"
+                android:layout_marginTop="5dp"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp">
+                <TextView
+                    android:text="Nguyên liệu"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="41dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/edt_nguyenLieu"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:layout_gravity="center"
+                    android:textSize="20dp"
+                    android:background="@drawable/botron_button"
+                    android:hint="250 gam bột"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/black"
+                android:layout_marginTop="5dp"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp">
+                <TextView
+                    android:text="Cách làm"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="41dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/edt_cachLam"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:layout_gravity="center"
+                    android:textSize="20dp"
+                    android:background="@drawable/botron_button"
+                    android:hint="B1: trộn bột với nước khi đặc lại \n B2: Đậy kín hỗn hợp lại và để ở nhiệt độ phòng trong vòng 24-36 tiếng"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/black"
+                android:layout_marginTop="5dp"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp">
+                <TextView
+                    android:text="Dụng cụ cần chuẩn bị"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="41dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/edt_dungCu"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:layout_gravity="center"
+                    android:textSize="20dp"
+                    android:background="@drawable/botron_button"
+                    android:hint="Dao, Nồi, Chảo,..."
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".fragment.ThemMonMoiFragment">-->
+
+<!--    &lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:text="@string/hello_blank_fragment" />-->
+
+<!--</FrameLayout>-->

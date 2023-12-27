@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DangNhapActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@mipmap/img_backround_login_foreground"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    >
+
+    <TextView
+        android:text="WELCOME TO COOKPAD"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Tên tài khoản"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edt_taiKhoan"
+            android:hint="Nhập tên tài khoản"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:text="Mật khẩu"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:textStyle=""
+            android:id="@+id/edt_matKhau"
+            android:hint="************"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/fgDangNhap_tv_taoTaiKhoan"
+            android:textSize="19dp"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+            android:text="Tạo tài khoản"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:id="@+id/btn_dangNhap"
+            android:text="Đăng nhập"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:backgroundTint="@color/white"
+            android:layout_width="150dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+</LinearLayout>

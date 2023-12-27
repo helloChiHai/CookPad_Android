@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.SuaThongTinNguoiDungFragment"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@mipmap/img_user_dl_2_foreground"
+                android:background="@drawable/botron_img_2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_suaTT_txt_UserNam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên"
+            android:textColorHint="@color/mauXam"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragment_suaTT_edt_UserNam"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_suaTT_txt_UserID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID Cookpad"
+            android:textColorHint="@color/mauXam"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragment_suaTT_edt_UserID"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_suaTT_txt_UserEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColorHint="@color/mauXam"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragment_suaTT_edt_UserEmail"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_suaTT_txt_UserDenTu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Đến từ..."
+            android:textColorHint="@color/mauXam"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragment_suaTT_edt_UserDenTu"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_suaTT_txt_UserCamNhan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vài dòng về bạn và đam mê nấu nướng"
+            android:textColorHint="@color/mauXam"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragment_suaTT_edt_UserCamNhan"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+

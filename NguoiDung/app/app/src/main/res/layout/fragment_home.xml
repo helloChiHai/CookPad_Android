@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/my_image_view"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/logo_chef_foreground"
+                android:clipToOutline="true"
+                android:outlineProvider="background"
+                android:background="@drawable/botron_img"
+                android:layout_margin="10dp"
+                />
+
+            <Button
+                android:id="@+id/fgHome_btn_chuyenFgSearch2"
+                android:text="Gõ vào tên các món..."
+                android:backgroundTint="#707070"
+                android:layout_marginRight="10dp"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#111111"
+            android:layout_marginTop="15dp"
+
+            >
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/fgHome_tv_tatCa"
+                        android:text="Tất cả"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:id="@+id/fgHome_tv_monTrung"
+                        android:text="món trứng"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:id="@+id/fgHome_tv_monSotCay"
+                        android:text="sốt cay"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:id="@+id/fgHome_tv_monNhoiThit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="15dp"
+                        android:text="nhồi thịt"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/fgHome_tv_monThitKho"
+                        android:text="thịt kho"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:id="@+id/fgHome_tv_monAnVat"
+                        android:text="ăn vặt"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:id="@+id/fgHome_tv_monLauCa"
+                        android:text="lẩu cá cay"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:id="@+id/fgHome_tv_monMiCay"
+                        android:text="mì cay"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_MonAnTheoLoai"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:background="@drawable/botron_button"
+                android:gravity="center"
+                android:layout_gravity="center"
+                >
+                <Button
+                    android:id="@+id/fgHome_btn_chuyenFgTatCaMonAn"
+                    android:paddingLeft="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#707070"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:text="Xem gợi ý khác" />
+                <ImageView
+                    android:paddingRight="180dp"
+                    android:scaleType="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/baseline_search_white_24" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#111111"
+            android:layout_marginTop="15dp"
+            android:paddingBottom="20dp"
+            >
+
+            <TextView
+                android:text="Món mới nhất"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:layout_marginBottom="15dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_MonMoiNhat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#111111"
+            android:layout_marginTop="15dp"
+            android:paddingBottom="20dp"
+
+            >
+            <TextView
+                android:text="Cuối tuần mua con cá chép về làm được đủ món"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:text="Thịt cá chép có nhiều dinh dưỡng, thịt mềm, ít xương, thích hợp cho mẹ bầu, trẻ em"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="15dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_MonCuoiTuan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#111111"
+            android:layout_marginTop="15dp"
+            android:paddingBottom="20dp"
+
+            >
+            <TextView
+                android:text="Món ngon chua ngọt với sốt"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:text="Me có thể kết hợp trong rất nhiều món mặn ăn cơm hay ăn chơi. Vị chua ngọt mặn dễ dàng kích thích vị giác trong những tời nóng chán ăn"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="15dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_MonSotMe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

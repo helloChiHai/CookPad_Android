@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_qlNguoiDung" android:title="User" android:icon="@drawable/baseline_supervised_user_circle_24"></item>
+    <item android:id="@+id/menu_list_NguoiDung" android:title="List User" android:icon="@drawable/baseline_supervised_user_circle_24"></item>
+    <item android:id="@+id/menu_list_monDuocLuu" android:title="Item is saved" android:icon="@drawable/baseline_save_24" ></item>
+    <item android:id="@+id/menu_qlMonAn" android:title="Food" android:icon="@drawable/baseline_fastfood_24"></item>
+    <item android:id="@+id/menu_list_MonAn" android:title="List Food" android:icon="@drawable/baseline_fastfood_24"></item>
+</menu>

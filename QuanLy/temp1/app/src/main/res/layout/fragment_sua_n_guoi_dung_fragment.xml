@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.SuaNGuoiDungFragmentFragment"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:text="CẬP NHẬT THÔNG TIN NGƯỜI DÙNG"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="ID: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/SuaNguoiDungFragment_edt_idNguoiDung"
+            android:hint="hai123"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Tên: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/SuaNguoiDungFragment_edt_tenNguoiDung"
+            android:hint="Vương Chí Hải"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Hình ảnh: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/SuaNguoiDungFragment_btn_chonHinhAnh"
+            android:text="Chọn hình ảnh"
+            android:textSize="15dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Hình ảnh được chọn: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/SuaNguoiDungFragment_img_hinhAnhDuocChon"
+            android:layout_width="87dp"
+            android:layout_height="90dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Tài khoản: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/SuaNguoiDungFragment_edt_taiKhoanNguoiDung"
+            android:hint="vuongchihai0711"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Mật khẩu: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/SuaNguoiDungFragment_edt_matKhauNguoiDung"
+            android:hint="*******"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Email: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/SuaNguoiDungFragment_edt_emailNguoiDung"
+            android:hint="vuongchihai0711@gmail.com"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Mã quyền: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/SuaNguoiDungFragment_edt_maQuyenNguoiDung"
+            android:hint="0"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+        <Button
+            android:text="Cập Nhật"
+            android:id="@+id/SuaNguoiDungFragment_btn_capNhat"
+            android:layout_width="160dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="15dp"/>
+        <Button
+            android:text="Thoát"
+            android:id="@+id/SuaNguoiDungFragment_btn_thoatCapNhat"
+            android:layout_width="160dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+</LinearLayout>

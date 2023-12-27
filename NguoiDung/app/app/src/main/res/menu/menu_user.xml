@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/user_setting"
+        android:icon="@drawable/baseline_settings_white_26"
+        android:title="s"
+        app:showAsAction="always" />
+
+    <group
+        android:id="@+id/my_group"
+        android:checkableBehavior="single"
+        android:menuCategory="secondary"
+        android:orderInCategory="1"
+        app:showAsAction="always">
+        <item
+            android:id="@+id/user_setting_xemThongTinCaNhan"
+            android:checkable="false"
+            android:icon="@android:drawable/ic_lock_silent_mode"
+            android:title="Xem thông tin cá nhân"
+
+            app:showAsAction="collapseActionView" />
+    </group>
+
+</menu>

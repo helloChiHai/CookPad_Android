@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ChiTietMonAnFragment"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:text="CHI TIẾT MÓN ĂN"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="ID món: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/chiTietFragment_tv_idMonAn"
+            android:text="null"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="ID người nấu: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/chiTietFragment_tv_idNguoiDung"
+            android:text="null"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Tên món: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/chiTietFragment_tv_tenMonAn"
+            android:text="null"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Hình ảnh: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/chiTietFragment_img_hinhMonAn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Loại: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/chiTietFragment_tv_loaiMonAn"
+            android:text="null"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Hướng dẫn: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/chiTietFragment_tv_huongDanMonAn"
+            android:text="null"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Nguyên liệu: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/chiTietFragment_tv_nguyenLieuMonAn"
+            android:text="null"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Thời gian nấu: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/chiTietFragment_tv_thoiGianMonAn"
+            android:text="null"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Dụng cụ: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/chiTietFragment_tv_dungCuMonAn"
+            android:text="null"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+        <Button
+            android:text="Sửa"
+            android:id="@+id/chiTietFragment_btn_suaMonAn"
+            android:layout_width="160dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="15dp"/>
+        <Button
+            android:id="@+id/chiTietFragment_btn_xoaMonAn"
+            android:text="Xóa"
+            android:layout_width="160dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+</LinearLayout>

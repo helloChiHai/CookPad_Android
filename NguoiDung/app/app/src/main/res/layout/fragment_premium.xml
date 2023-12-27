@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.PremiumFragment"
+    android:background="#3B300D"
+    android:orientation="vertical">
+
+    <ImageView
+        android:src="@mipmap/img_premium_header_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginTop="-140dp"
+        android:layout_marginBottom="-120dp"
+        android:scaleType="fitXY"></ImageView>
+
+    <TextView
+        android:text="Tìm món ngon đã qua kiểm chứng nhanh hơn và hơn thế nữa"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#ff8c00"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Bắt đầu lên VIP"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/botron_button_3"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:text="Hơn nữa, bạn có thể"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="✓ Lưu món không giới hạn"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="✓ Sàng lọc các món để khớp với sở thích và chế độ ăn của bạn"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="✓ Giúp giữ Cookpad không quảng cáo"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".fragment.PremiumFragment">-->
+
+<!--    &lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:text="@string/hello_blank_fragment" />-->
+
+<!--</FrameLayout>-->

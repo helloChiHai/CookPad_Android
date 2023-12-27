@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.QLMonAnDuocNguoiDungLuuFragment"
+    android:orientation="vertical"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    >
+
+    <TextView
+        android:text="QUẢN LÝ MÓN ĂN ĐƯỢC LƯU"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:text="ID người dùng: "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/fgMonLuu_edt_id_nguoiDung"
+            android:hint="2001200016"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:text="ID món ăn: "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/fgMonLuu_edt_id_monAn"
+            android:hint="2001200016"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        >
+        <Button
+            android:text="Lưu"
+            android:id="@+id/fgMonluu_btn_LuuMon"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:text="Querry"
+            android:id="@+id/fgMonluu_btn_Querry"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_dsMonAnDuocNguoiDungLuu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
